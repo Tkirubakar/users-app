@@ -1,0 +1,47 @@
+.card {
+  background: #FBFCFF;
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: start;
+  transition: all 0.2s ease;
+  gap: 1rem;
+}
+
+.card:hover{
+  border: 1px solid #BFC8E5;
+  box-shadow: 0 4px 12px rgba(102, 117, 255, 0.2);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.details {
+  flex: 1;
+}
+
+.name {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.location {
+  font-weight: 500;
+  color: #151B32;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 1.4rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-weight: 500;
+}

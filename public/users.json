@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Lelah Nichols",
+    "location": "Troy, MI",
+    "tags": ["clothes", "stem"],
+    "avatar": "https://i.pravatar.cc/150?img=1"
+  },
+  {
+    "id": 2,
+    "name": "Jesus Weiss",
+    "location": "Fort Worth, TX",
+    "tags": ["headset", "gadget", "speed", "winter"],
+    "avatar": "https://i.pravatar.cc/150?img=2"
+  },
+  {
+    "id": 3,
+    "name": "Annie Rice",
+    "location": "Austin, TX",
+    "tags": ["road", "mountain", "trip", "earth", "nature"],
+    "avatar": "https://i.pravatar.cc/150?img=3"
+  },
+  {
+    "id": 4,
+    "name": "Robert Brower",
+    "location": "Cincinnati, OH",
+    "tags": ["Maintenance", "gears", "frames", "repair"],
+    "avatar": "https://i.pravatar.cc/150?img=4"
+  },
+  {
+    "id": 5,
+    "name": "Amy Campbell",
+    "location": "Warrior, AL",
+    "tags": ["music", "disks"],
+    "avatar": "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    "id": 6,
+    "name": "Anthony S. Morin",
+    "location": "Lyndhurst, NJ",
+    "tags": ["vintage", "electric"],
+    "avatar": "https://i.pravatar.cc/150?img=6"
+  }
+]

@@ -1,0 +1,46 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchWrapper {
+  position: relative;
+  width: 250px;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search {
+  padding: 15px 36px 15px 50px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #BFC8E6;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.menu span {
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 20px 10px;
+}
+
+.active {
+  background: #849FFF;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.heading{
+  font-family: 'Merriweather', serif;
+}
