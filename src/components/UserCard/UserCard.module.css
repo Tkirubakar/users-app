@@ -6,6 +6,7 @@
   align-items: start;
   transition: all 0.2s ease;
   gap: 1rem;
+  border: 1px solid transparent;
 }
 
 .card:hover{
@@ -36,7 +37,7 @@
   color: #151B32;
   font-size: 16px;
   margin-top: 10px;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .tags {

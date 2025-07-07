@@ -1,13 +1,13 @@
-.app {
-  font-family: 'Poppins', sans-serif;
-  width: 65%;
-  margin: 0 auto;
-  color: #151B32;
-}
-
 .grid {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+.empty {
+  padding: 2rem;
+  text-align: center;
+  color: #999;
+  font-family: 'Poppins', sans-serif;
 }
