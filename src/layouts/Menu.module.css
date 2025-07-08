@@ -1,0 +1,11 @@
+.menu span {
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 15px 10px;
+}
+
+.active {
+  background: #849FFF;
+  color: #fff;
+  border-radius: 8px;
+}

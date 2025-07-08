@@ -1,28 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import UserCard from '../UserCard/UserCard';
 import styles from './UserList.module.css';
+import { fetchUsers } from '../../services/userService';
 
-function UserList({ searchTerm }) {
+function UserList() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('/users.json')
-      .then(res => res.json())
-      .then(data => setUsers(data))
-      .catch(() => setUsers([]));
-  }, []);
+    const loadUsers = async () => {
+      try {
+        const data = await fetchUsers();
+        setUsers(data);
+      } catch (error) {
+        setUsers([]);
+      }
+    };
 
-  const filteredUsers = users.filter(user =>
-    user?.name?.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+    loadUsers();
+  }, []);
 
   if (!users || users.length === 0) {
     return <div className={styles.empty}>No users available</div>;
   }
-
+  console.log('sdfkgskdfs')
   return (
     <div className={styles.grid}>
-      {filteredUsers.map(user => (
+      {users.map(user => (
         <UserCard key={user.id} user={user} />
       ))}
     </div>
