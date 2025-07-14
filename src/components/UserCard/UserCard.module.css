@@ -46,3 +46,11 @@
   gap: 0.5rem;
   font-weight: 500;
 }
+
+.tag {
+  color: #516FD4;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-size: 12px;
+  border: 1px solid #BFC8E6;
+}

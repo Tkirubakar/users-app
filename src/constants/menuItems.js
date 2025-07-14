@@ -1,0 +1,1 @@
+export const menuItems = ['Reputation', 'New users', 'Voters', 'Editors', 'Moderators'];

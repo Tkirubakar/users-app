@@ -6,16 +6,18 @@ import { fetchUsers } from '../../services/userService';
 function UserList() {
   const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    const loadUsers = async () => {
-      try {
-        const data = await fetchUsers();
-        setUsers(data);
-      } catch (error) {
-        setUsers([]);
-      }
-    };
+  const loadUsers = async () => {
+    try {
+      const data = await fetchUsers();
+      setUsers(data);
+    } catch (error) {
+      setUsers([]);
+    }
+  };
 
+  useEffect(() => {
+    console.log('useeffect')
+    
     loadUsers();
   }, []);
 
@@ -25,7 +27,7 @@ function UserList() {
   console.log('sdfkgskdfs')
   return (
     <div className={styles.grid}>
-      {users.map(user => (
+      {users?.map(user => (
         <UserCard key={user.id} user={user} />
       ))}
     </div>

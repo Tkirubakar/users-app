@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './UserCard.module.css';
-import Tag from '../Tag/Tag';
 
 function UserCard({ user }) {
+  console.log('sdfsdf')
   return (
     <div className={styles.card}>
       <img className={styles.avatar} src={user.avatar} alt={user.name} />
@@ -11,7 +11,7 @@ function UserCard({ user }) {
         <div className={styles.location}>{user.location}</div>
         <div className={styles.tags}>
           {user.tags.map((tag, index) => (
-            <Tag key={index} label={tag} />
+            <span key={index} className={styles.tag}>{tag}</span>
           ))}
         </div>
       </div>

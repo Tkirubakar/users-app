@@ -1,16 +1,17 @@
 import React from 'react';
 import styles from './SearchInput.module.css';
+import SearchIcon from '../SearchIcon/SearchIcon';
+import SearchField from '../SearchField/SearchField';
 
 function SearchInput({ value, onChange, placeholder = 'Search...', icon = '/Frame.svg' }) {
   return (
     <div className={styles.searchWrapper}>
-      <img src={icon} alt="search" className={styles.icon} />
-      <input
-        type="text"
-        placeholder={placeholder}
-        className={styles.search}
+      <SearchIcon className={styles.icon} />
+      <SearchField
         value={value}
         onChange={onChange}
+        placeholder={placeholder}
+        className={styles.search}
       />
     </div>
   );
