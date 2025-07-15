@@ -3,7 +3,7 @@ import SearchInput from '../SearchInput/SearchInput'
 import Menu from '../../layouts/Menu';
 import styles from './Header.module.css';
 
-function Header({ searchTerm, onSearchChange }) {
+function Header({ searchTerm }) {
   console.log('header')
   return (
   <>

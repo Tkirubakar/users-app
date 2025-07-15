@@ -10,7 +10,7 @@ function UserCard({ user }) {
         <h1 className={styles.name}>{user.name}</h1>
         <div className={styles.location}>{user.location}</div>
         <div className={styles.tags}>
-          {user.tags.map((tag, index) => (
+          {user?.tags?.map((tag, index) => (
             <span key={index} className={styles.tag}>{tag}</span>
           ))}
         </div>
